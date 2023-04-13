@@ -5,7 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import pl.org.akai.audioai.screens.AssistantScreen
-import pl.org.akai.audioai.screens.LoginScreen
+import pl.org.akai.audioai.screens.login_screen.LoginScreen
 import pl.org.akai.audioai.screens.OnboardingScreen
 import pl.org.akai.audioai.screens.OptionsScreen
 
