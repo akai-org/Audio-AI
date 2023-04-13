@@ -24,6 +24,9 @@ class LoginScreenViewModel : ViewModel() {
             is LoginScreenAction.TypeUserPassword -> {
                 state.copy(password = action.password)
             }
+            is LoginScreenAction.ChangeRememberMe -> {
+                state.copy(rememberMeChecked = action.rememberMe)
+            }
             LoginScreenAction.NavigationDone -> {
                 state.copy(navigate = null)
             }
