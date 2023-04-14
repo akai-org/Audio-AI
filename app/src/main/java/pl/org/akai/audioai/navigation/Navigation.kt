@@ -12,7 +12,7 @@ import pl.org.akai.audioai.screens.OptionsScreen
 @Composable
 fun Navigation() {
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = Screen.OnboardingScreen.route) {
+    NavHost(navController = navController, startDestination = Screen.AssistantScreen.route) {
         composable(route = Screen.OnboardingScreen.route) {
             OnboardingScreen(navController = navController)
         }

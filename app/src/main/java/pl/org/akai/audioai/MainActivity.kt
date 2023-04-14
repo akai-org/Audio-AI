@@ -10,12 +10,21 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.app.ActivityCompat
 import pl.org.akai.audioai.navigation.Navigation
 import pl.org.akai.audioai.ui.theme.AudioAITheme
+import java.util.jar.Manifest
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        ActivityCompat.requestPermissions(
+            this,
+            arrayOf(android.Manifest.permission.RECORD_AUDIO),
+            0
+        )
+
         setContent {
             AudioAITheme {
                 // A surface container using the 'background' color from the theme
