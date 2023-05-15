@@ -65,6 +65,9 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
 
+    // onboardingScreen
+    implementation("androidx.core:core-splashscreen:1.0.0")
+
     //Navigation
     implementation("androidx.navigation:navigation-compose:$nav_version")
 
